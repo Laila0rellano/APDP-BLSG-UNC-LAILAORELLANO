@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Beneficio de Litigar sin Gastos</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+  <h1>Solicitud de Beneficio de Litigar o Mediar sin Gastos</h1>
+  
+ <fieldset>
+    <legend>DATOS PERSONALES</legend>
+    <label>Nombre del Peticionante:<input type="text" name="nombre"></label>
+    <div class="inline">
+      <label>Fecha de Nacimiento:<input type="date" name="fecha_nac"></label>
+      <label>CUIT / CUIL:<input type="text" name="cuil"></label>
+    </div>
+    <label>Tipo y Número de Documento:<input type="text" name="documento"></label>
+    <label>Cantidad de Familiares a Cargo:<input type="number" name="familiares"></label>
+    <label>Domicilio Real:<input type="text" name="domicilio"></label>
+    <div class="inline">
+      <label>Correo electrónico:<input type="email" name="email"></label>
+      <label>Teléfono / Celular:<input type="tel" name="telefono"></label>
+    </div>
+    <div class="inline">
+      <label>Vivienda Propia:
+        <select name="vivienda_propia">
+          <option value="">Seleccione</option>
+          <option>SI</option>
+          <option>NO</option>
+        </select>
+      </label>
+      <label>Vivienda Alquilada:
+        <select name="vivienda_alquilada">
+          <option value="">Seleccione</option>
+          <option>SI</option>
+          <option>NO</option>
+        </select>
+      </label>
+    </div>
+    <label>Monto de Alquiler:<input type="text" name="monto_alquiler"></label>
+    <label>Fecha de Contrato:<input type="date" name="fecha_contrato"></label>
+    <label>Otro carácter en el que habita la vivienda:<input type="text" name="otro_caracter"></label>
+
+    <h4>Cónyuge o Conviviente</h4>
+    <label>Nombre:<input type="text" name="conyuge_nombre"></label>
+    <label>Fecha de Nacimiento:<input type="date" name="conyuge_fecha"></label>
+    <label>CUIT / CUIL:<input type="text" name="conyuge_cuil"></label>
+    <label>Tipo y Número de Documento:<input type="text" name="conyuge_documento"></label>
+    <label>Domicilio Real:<input type="text" name="conyuge_domicilio"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>LOCALIZACIÓN Y DESCRIPCIÓN DE LA VIVIENDA</legend>
+    <label>Dirección de la vivienda:<input type="text" name="direccion_vivienda"></label>
+    <div class="inline">
+      <label>Cantidad de Años:<input type="number" name="cantidad_anios"></label>
+      <label>Antigüedad de la Vivienda:<input type="text" name="antiguedad"></label>
+    </div>
+    <div class="inline">
+      <label>Superficie del Terreno (m²):<input type="text" name="sup_terreno"></label>
+      <label>Superficie Cubierta (m²):<input type="text" name="sup_cubierta"></label>
+    </div>
+    <label>Cantidad de Dormitorios:<input type="number" name="cant_dormitorios"></label>
+    <label>Cantidad de Baños:<input type="number" name="cant_banios"></label>
+
+    <h4>Características</h4>
+    <label>Techo:
+      <select name="techo">
+        <option value="">Seleccione</option>
+        <option>Tejas</option>
+        <option>Chapa</option>
+        <option>Losa</option>
+        <option>Otros</option>
+      </select>
+    </label>
+    <label>Piso:
+      <select name="piso">
+        <option value="">Seleccione</option>
+        <option>Madera</option>
+        <option>Granito</option>
+        <option>Cerámico</option>
+        <option>Otros</option>
+      </select>
+    </label>
+    <label>Aberturas:
+      <select name="aberturas">
+        <option value="">Seleccione</option>
+        <option>Madera</option>
+        <option>Chapa</option>
+        <option>Aluminio</option>
+        <option>Otros</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>INGRESOS</legend>
+    <label>Profesión o Actividad:<input type="text" name="profesion"></label>
+    <label>Domicilio Laboral y/o Comercial:<input type="text" name="domicilio_laboral"></label>
+    <label>Ingresos Mensuales:<input type="text" name="ingresos_mensuales"></label>
+    <label>Rentas - Alquileres:<input type="text" name="rentas"></label>
+    <label>Ingresos del Cónyuge o Conviviente:<input type="text" name="ingresos_conyuge"></label>
+    <label>Ingresos de Personas a Cargo:<input type="text" name="ingresos_personas_cargo"></label>
+    <label>Planes Sociales Oficiales:
+      <select name="planes_sociales">
+        <option value="">Seleccione</option>
+        <option>SI</option>
+        <option>NO</option>
+      </select>
+    </label>
+    <div class="inline">
+      <label>Nacional ($):<input type="text" name="plan_nacional"></label>
+      <label>Provincial ($):<input type="text" name="plan_provincial"></label>
+      <label>Municipal ($):<input type="text" name="plan_municipal"></label>
+    </div>
+    <p><strong>IMPORTANTE:</strong> En caso de trabajo formal en relación de dependencia y/o beneficio previsional se debe acompañar obligatoriamente recibo de sueldo, haberes o pensión.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>PASIVO OBTENIDO EN LOS ÚLTIMOS 2 AÑOS</legend>
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo de Deuda</th>
+          <th>Entidad</th>
+          <th>Cuota Mensual</th>
+          <th>No Poseo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Tipo de Deuda">Deudas Bancarias</td>
+          <td data-label="Entidad"><input type="text"></td>
+          <td data-label="Cuota Mensual"><input type="text"></td>
+          <td data-label="No Poseo"><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td data-label="Tipo de Deuda">Deudas Prendarias</td>
+          <td data-label="Entidad"><input type="text"></td>
+          <td data-label="Cuota Mensual"><input type="text"></td>
+          <td data-label="No Poseo"><input type="checkbox"></td>
+        </tr>
+        <tr>            
+          <td data-label="Tipo de Deuda">Deudas Hipotecarias</td>
+          <td data-label="Entidad"><input type="text"></td>
+          <td data-label="Cuota Mensual"><input type="text"></td>
+          <td data-label="No Poseo"><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td data-label="Tipo de Deuda">Otras Deudas</td>
+          <td data-label="Entidad"><input type="text"></td>
+          <td data-label="Cuota Mensual"><input type="text"></td>
+          <td data-label="No Poseo"><input type="checkbox"></td>
+        </tr>
+      </tbody>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>GASTOS EN SERVICIOS DOMICILIARIOS Y OTROS</legend>
+    <table>
+      <thead>
+        <tr>
+          <th>Servicio</th>
+          <th>$ Consumo Mensual</th>
+          <th>N° Cta./Cliente</th>
+          <th>Servicio</th>
+          <th>Dato</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Servicio">Luz</td><td data-label="$ Consumo Mensual"><input type="text"></td><td data-label="N° Cta./Cliente"><input type="text"></td>
+          <td data-label="Servicio">Teléf. Celular</td><td data-label="$ Consumo Mensual" ><input type="text"></td>
+        </tr>
+        <tr>
+          <td data-label="Servicio">Agua</td><td data-label="$ Consumo Mensual"><input type="text"></td><td data-label="N° Cta./Cliente"><input type="text"></td>
+          <td data-label="Servicio">Póliza de Seg.</td><td data-label="$ Consumo Mensual"><input type="text"></td>
+        </tr>
+        <tr>
+          <td data-label="Servicio">Gas</td><td><input type="text"></td><td data-label="$ Consumo Mensual"><input type="text"></td>
+          <td data-label="Servicio">TV por Cable</td><td data-label="$ Consumo Mensual"><input type="text"></td>
+        </tr>
+        <tr>
+          <td data-label="Servicio">Teléf. Fijo</td><td data-label="$ Consumo Mensual"><input type="text"></td><td data-label="N° Cta./Cliente"><input type="text"></td>
+          <td data-label="Servicio">Club</td><td data-label="$ Consumo Mensual"><input type="text"></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td>
+          <td data-label="Servicio">Otros</td><td data-label="$ Consumo Mensual"><input type="text"></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>IMPORTANTE:</strong> Complete con una línea "___________" los rubros que NO posea.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>DESCRIPCIÓN PATRIMONIAL DE BIENES DE TERCEROS</legend>
+    <p>Bienes propios del cónyuge, conviviente o personas sujetas a patria potestad, tutela o curatela no incluidos en el detalle anterior:</p>
+    <table>
+      <thead>
+        <tr><th>Descripción del bien</th><th>Valuación</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="Descripción del bien"><input type="text"></td><td data-label="Valuación"><input type="text"></td></tr>
+        <tr><td data-label="Descripción del bien"><input type="text"></td><td data-label="Valuación"><input type="text"></td></tr>
+      </tbody>
+    </table>
+  </fieldset>
+  <fieldset>
+    <legend>DATOS ADICIONALES</legend>
+    <p>Personas a cargo cursando estudios:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Nivel</th>
+          <th>Cantidad de Personas</th>
+          <th>Entidad Pública</th>
+          <th>Entidad Privada</th>
+          <th>Valor de Cuota</th>
+          <th>No Poseo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Nivel">Pre-escolar</td>
+          <td data-label="Cantidad de Personas"><input type="text"></td>
+          <td data-label="Entidad Pública"><input type="text"></td>
+          <td data-label="Entidad Privada"><input type="text"></td>
+          <td data-label="Valor de Cuota"><input type="text"></td>
+          <td data-label="No Poseo"><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td data-label="Nivel">Primario</td>
+          <td data-label="Cantidad de Personas"><input type="text"></td>
+          <td data-label="Entidad Pública"><input type="text"></td>
+          <td data-label="Entidad Privada"><input type="text"></td>
+          <td data-label="Valor de Cuota"><input type="text"></td>
+          <td data-label="No Poseo"><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td data-label="Nivel">Secundario</td>
+          <td data-label="Cantidad de Personas"><input type="text"></td>
+          <td data-label="Entidad Pública"><input type="text"></td>
+          <td data-label="Entidad Privada"><input type="text"></td>
+          <td data-label="Valor de Cuota"><input type="text"></td>
+          <td data-label="No Poseo"><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td data-label="Nivel">Universitario - Terciario</td>
+          <td data-label="Cantidad de Personas"><input type="text"></td>
+          <td data-label="Entidad Pública"><input type="text"></td>
+          <td data-label="Entidad Privada"><input type="text"></td>
+          <td data-label="Valor de Cuota"><input type="text"></td>
+          <td data-label="No Poseo"><input type="checkbox"></td>
+        </tr>
+      </tbody>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>DATOS DE LA CAUSA PRINCIPAL</legend>
+    <p><label>Nombre de los Autos Principales: <input type="text"></label></p>
+    <p><label>Número de Expediente: <input type="text"></label></p>
+    <p><label>Tipo de Juicio: <input type="text"></label></p>
+    <p><label>Demandado/s: <input type="text"></label></p>
+    <p><label>Domicilio: <input type="text"></label></p>
+    <p><label>Monto de la Pretensión: <input type="text"></label></p>
+    <p><label>Importe aproximado de los gastos de la causa principal: <input type="text"></label></p>
+    <p>
+      <strong>¿Tiene presentado algún otro B.L.S.G o B.M.S.G?</strong>
+      <label>SÍ <input type="checkbox"></label>
+      <label>NO <input type="checkbox"></label>
+    </p>
+    <p><label>En caso afirmativo, indique el Nro. del Expte.: <input type="text"></label></p>
+  </fieldset>
+
+  <fieldset>
+    <h2>Declaración Jurada</h2>
+    <p>El que suscribe, <input type="text" style="width: 300px;"> , Documento Nº <input type="text" style="width: 200px;">,<br>
+      con domicilio real en calle <input type="text" style="width: 300px;"> Nº <input type="text" style="width: 100px;"> de Barrio <input type="text" style="width: 200px;">,<br>
+      de la localidad <input type="text" style="width: 200px;">, de estado civil <input type="text" style="width: 200px;">, declara BAJO FE DE JURAMENTO que al día de la solicitud del presente Beneficio, es poseedor del patrimonio supra descripto.
+    </p>
+
+    <p>Asimismo manifiesta que la presente Declaración Jurada incluye la totalidad de los bienes propios del declarante y de su cónyuge, así como los bienes de la sociedad conyugal, y los de quienes se encuentran bajo su patria potestad, tutela y/o curatela.</p>
+    <p>Además, el declarante manifiesta conocer el monto de los gastos cuya eximición de pago pretende y autoriza la consulta sobre su condición socioeconómica en bases de información externa (art. 104 del CPCC).</p>
+
+    <p>Córdoba, a <input type="text" style="width: 50px;"> días del mes de <input type="text" style="width: 150px;"> del año <input type="text" style="width: 80px;">.</p>
+
+    <p>
+      Firma del Declarante ________________________ &nbsp;&nbsp;&nbsp;&nbsp;
+      Firma del Patrocinante o Apoderado ________________________<br>
+      Matrícula ________________________
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <h2>Documentación Sugerida</h2>
+    <ul>
+      <li>Documento de identidad de su cónyuge o conviviente</li>
+      <li>Constancia de Cuit o Cuil del peticionante y cónyuge</li>
+      <li>Recibo de Haberes o Certificación de Ingresos de ambos</li>
+      <li>Contrato de Alquiler, Rentas u otros Ingresos</li>
+      <li>Escrituras de Inmuebles y Títulos de Propiedad de Automotores</li>
+      <li>Certificados de Plazo Fijo, Resumen de Cuentas Bancarias y Tarjetas de Crédito</li>
+      <li>Constancias de Créditos o Deudas Hipotecarias, Prendarias, Bancarias, etc.</li>
+      <li>Factura de Servicios, Impuestos, etc.</li>
+      <li>Cedulón de Imp. Provincial sobre Inmuebles y/o Automotores</li>
+      <li>Pólizas de Seguros contratados</li>
+    </ul>
+  </fieldset>
+
+  <div class="adv">
+    <p><strong>Advertencia legal:</strong> La presente declaración jurada y las copias incorporadas revisten carácter de declaración jurada. Toda información engañosa, maliciosa u ocultamiento será pasible de acciones penales (Art. 172 y 293 del Código Penal).</p>
+    <p><strong>Art. 172 CP:</strong> Reprime con prisión de un mes a seis años al que defraudare a otro usando engaños, falsas calidades, títulos o simulaciones.<br>
+    <strong>Art. 293 CP:</strong> Reprime con prisión de uno a seis años al que insertare declaraciones falsas en un instrumento público de modo que pueda resultar perjuicioso.</p>
+    
+    <button class="popup-button" onclick="printPage()">Imprimir</button>
+    <button class="popup-button" onclick="downloadPDF()">Descargar PDF</button>
+  </div>
+
+  <footer>
+      <p>© 2025 - ATENEO PERMANENTE DE DERECHO PROCESAL - Universidad Nacional de Córdoba</p>
+  </footer>
+  <!-- Script para imprimir y generar PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    function printPage() {
+      window.print();
+    }
+
+    function downloadPDF() {
+      const element = document.body;
+      const opt = {
+        margin:       0.5,
+        filename:     'solicitud-beneficio.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(element).save();
+    }
+  </script>
+</body>
+</html>

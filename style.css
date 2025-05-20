@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+header .titulo {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header .subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+header .btn {
+  margin-top: 1rem;
+  background: #1976d2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+nav {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 10px;
+  background: white;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  color: #0d47a1;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #eceff1;
+  font-size: 0.9rem;
+}
+
+.popup-button {
+  background-color: #3d5afe;
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+a{
+  color:#fff
+}
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.popup.hidden {
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+}
+#resultadoSimulador p {
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#resultadoSimulador p:before {
+  content: "💡 ";
+}
+html {
+  scroll-behavior: smooth;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.logo-unc {
+  max-width: 100px;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3em;
+  text-align: center;
+  color: #0d47a1;
+}
+
+
+
+p strong {
+  color: #000;
+}
+
+/* Contenedor fieldset */
+fieldset {
+  background: #ffff;
+  border: 2px solid  #0d47a1;
+  border-radius: 6px;
+  padding: 1em 1.5em 1.5em 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 5%;
+    margin-right: 5%;
+}
+
+.adv{
+  border-radius: 6px;
+  padding: 1em 1.5em 1.5em 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 5%;
+    margin-right: 5%;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 10px;
+  color:  #0d47a1;
+  font-size: 1.1rem;
+}
+
+/* Etiquetas y inputs */
+label {
+  display: block;
+  margin: 0.5em 0 1em 0;
+  font-weight: 600;
+  color: #222;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1.5px solid #5a5a5a;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 0.3em;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color:  #0d47a1;
+  outline: none;
+}
+
+/* Inputs tipo checkbox */
+input[type="checkbox"] {
+  width: auto;
+  margin-left: 8px;
+  transform: scale(1.1);
+  vertical-align: middle;
+}
+
+/* Para agrupar elementos en línea */
+.inline {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+.inline label {
+  flex: 1 1 200px;
+  margin-bottom: 0.7em;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.95rem;
+}
+
+thead {
+  background-color:  #0d47a1;
+  color: white;
+}
+
+th, td {
+  padding: 0.6em 0.8em;
+  border: 1px solid #ffffff;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+/* Texto informativo */
+p strong {
+  font-weight: 700;
+  color: #b00020;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Ajuste para inputs con width en línea */
+input[style] {
+  width: auto !important;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color: #0d47a1;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #1565c0;
+}
+
+.faq-answer {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  display: none;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.faq-answer.open {
+  display: block;
+}
+
+ /* --- Media Queries para Responsividad --- */
+
+/* Para pantallas medianas (tablets y laptops pequeñas) - hasta 992px */
+@media (max-width: 992px) {
+    header .titulo {
+        font-size: 2rem;
+    }
+
+    header .subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+        margin: 1rem auto; /* Ajuste para centrar en tablets */
+    }
+
+    nav ul {
+        flex-direction: column; /* La navegación se apila */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .popup-content {
+        width: 90%;
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    fieldset, .adv {
+        margin-left: 1%; /* Reducir márgenes laterales */
+        margin-right: 1%;
+        padding: 1.2em; /* Reducir padding */
+    }
+
+    legend {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+        /* Habilitar scroll horizontal para tablas si son muy anchas */
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Evita que el contenido de las celdas se envuelva */
+    }
+}
+
+/* Para pantallas pequeñas (móviles) - hasta 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 15px; /* Menos padding en móviles */
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    fieldset {
+        padding: 1em; /* Menos padding en fieldsets */
+        margin-bottom: 1.5em;
+    }
+
+    legend {
+        font-size: 1em;
+    }
+
+    .inline {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        gap: 0; /* Elimina el espacio horizontal cuando se apilan */
+    }
+
+    .inline label {
+        width: 100%; /* Ocupa el ancho completo */
+        min-width: unset; /* Elimina el ancho mínimo para que se adapte */
+        margin-bottom: 0.8em; /* Restaurar margen inferior para separación vertical */
+    }
+
+    /* Adaptación de tablas para móviles */
+    table, thead, tbody, th, td, tr {
+        display: block; /* Cada elemento de la tabla se convierte en un bloque */
+    }
+
+    thead tr {
+        position: absolute; /* Oculta la cabecera original */
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table td {
+        border: none; /* Elimina los bordes de celda */
+        border-bottom: 1px solid #eee; /* Agrega un borde inferior para separar filas */
+        position: relative;
+        padding-left: 50%; /* Espacio para el pseudo-elemento */
+        text-align: right; /* Alinea el contenido a la derecha */
+        white-space: normal; /* Permite que el texto se envuelva dentro de la celda */
+    }
+
+    table td:before {
+        /* Crea una "etiqueta" para cada celda en móviles */
+        content: attr(data-label); /* Usa el atributo data-label del HTML */
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    /* Asegúrate de que los campos de checkbox en la tabla se vean bien */
+    table td input[type="checkbox"] {
+        margin-left: 0;
+        width: auto; /* Restaura el ancho automático para checkboxes */
+    }
+
+    .popup-button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Para pantallas muy pequeñas (smartphones pequeños) - hasta 480px */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 3rem 1rem;
+    }
+
+    .logo-unc {
+        max-width: 80px;
+    }
+}
+/* Advertencia legal y botones del formulario */
+.adv {
+    background-color: #ffe0b2; /* Naranja claro */
+    border: 1px solid #ffcc80; /* Naranja */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #795548; /* Marrón oscuro */
+}
+
+.adv p {
+    margin-bottom: 10px;
+}
+
+.adv strong {
+    color: #d32f2f; /* Rojo oscuro para advertencia legal */
+}
+/* Ajustes específicos para inputs con width en línea (Declaración Jurada) */
+/* Esto sobrescribe los anchos fijos para que sean responsive */
+fieldset h2 + p input {
+    width: 100% !important; /* Ajusta el ancho para que sea completamente responsive */
+    max-width: 100%; /* Asegura que no exceda el ancho */
+    box-sizing: border-box;
+}
+
+/* Eliminar el estilo en línea si es posible en el HTML para evitar !important */
+input[style] {
+    width: auto !important; /* Resetea el width si hay estilos en línea, dando prioridad a las reglas responsivas */
+} 
