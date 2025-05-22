@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beneficio de Litigar sin Gastos - Córdoba</title>
-  <meta author="">
+  <meta name="author" content="Laila Orellano">
+    <meta name="keywords" content="Beneficio de Litigar sin Gastos, BLSG, UNC, Ateneo Procesal">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -44,33 +45,49 @@
         <li>Evaluación del juez o jueza sobre tu caso.</li>
       </ul>
     </section>
-
-    <section id="pasos" class="section">
-      <h2>¿Cómo pedirlo?</h2>
-     
-      <ol>
-        <li>Completá el formulario de solicitud</li>
-        <li>Acompañá prueba de tu situación</li>
-        <li>Presentalo en el juzgado</li>
-        <li>Esperá la resolución</li>
-      </ol>
-               <p>El Máximo Tribunal Provincial, mediante Acuerdo nº 06/11 – Serie “C” y modif. por Acuerdo Reglamentario Nº107/11 y 144/15, ambos Serie “C” instrumentó el actual formulario único y obligatorio de la "Declaración Jurada para tramitar el Beneficio de Litigar sin Gastos" que se encuentra disponible para completar a continuación:</p>
-      <button class="popup-button"><a href="formulario.html" class="btn">Completar formulario</a></button>
-    </section>
-
-  <section id="simulador" class="section">
+<section id="simulador" class="section">
   <h2>Simulador: ¿Puedo acceder al BLSG?</h2>
 
   <form id="blsgForm">
     
-    <div class="form-group">
-      <label for="ingresos">¿Tenés ingresos menores al salario mínimo?</label>
-      <select name="ingresos" id="ingresos" required>
-        <option value="">Seleccionar</option>
-        <option value="si">Sí</option>
-        <option value="no">No</option>
-      </select>
-    </div>
+<!-- FORMULARIO -->
+<div class="form-group">
+  <label for="ingresos">
+    ¿Tenés ingresos menores al salario mínimo?
+    <button type="button" class="info-btn" onclick="openModal()">ℹ️</button>
+  </label>
+  <select name="ingresos" id="ingresos" required>
+    <option value="">Seleccionar</option>
+    <option value="si">Sí</option>
+    <option value="no">No</option>
+  </select>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>¿Qué es el Salario Mínimo, Vital y Móvil?</h2>
+    <p>El Salario Mínimo, Vital y Móvil (SMVM) se refiere al sueldo mínimo oficial que se establece para los trabajadores. Se determina a través de negociaciones entre el gobierno, los empleadores y los sindicatos, y se actualiza periódicamente para tener en cuenta factores económicos como la inflación.</p>
+    
+    <p>La denominación "Vital" enfatiza la importancia de que el salario mínimo sea suficiente para cubrir las necesidades básicas de un trabajador y su familia. Mientras que, la palabra "Móvil", implica que debería ajustarse de manera periódica para que puedan mantener su poder adquisitivo frente a la inflación.</p>
+    
+    <h3>Funciones principales del salario mínimo</h3>
+    <ul>
+      <li><strong>Determinar el piso salarial:</strong> establece el monto mínimo que un empleado debe recibir antes de incluir otros beneficios o compensaciones adicionales.</li>
+      <li><strong>Permitir el cálculo de deducciones y contribuciones:</strong> muchos impuestos y contribuciones sociales se basan en el sueldo básico.</li>
+      <li><strong>Ser un elemento para evaluar aumentos y negociaciones:</strong> sirve como base en revisiones salariales.</li>
+      <li><strong>Base para beneficios y prestaciones:</strong> se utiliza para calcular derechos como aguinaldo, vacaciones, etc.</li>
+      <li><strong>Establecer una equidad salarial:</strong> ayuda a garantizar compensaciones justas entre roles similares.</li>
+    </ul>
+    
+    <p><strong>¿Cuánto es el salario mínimo en Argentina?</strong><br>
+    A finales del 2024 el salario mínimo se ubica en los $271.571,22.</p>
+
+    <p><strong>¿Cuánto se paga por 8 horas de trabajo en Argentina?</strong><br>
+    Por 8 horas de trabajo diarias, el SMVM es de $271.571,22 mensuales.</p>
+  </div>
+</div>
 
     <div class="form-group">
       <label for="bienes">¿Tenés bienes registrables (auto, casa)?</label>
@@ -95,6 +112,18 @@
 
   <div id="resultadoSimulador"></div>
 </section>
+    <section id="pasos" class="section">
+      <h2>¿Cómo pedirlo?</h2>
+     
+      <ol>
+        <li>Completá el formulario de solicitud</li>
+        <li>Acompañá prueba de tu situación</li>
+        <li>Presentalo en el juzgado</li>
+        <li>Esperá la resolución</li>
+      </ol>
+               <p>El Máximo Tribunal Provincial, mediante Acuerdo nº 06/11 – Serie “C” y modif. por Acuerdo Reglamentario Nº107/11 y 144/15, ambos Serie “C” instrumentó el actual formulario único y obligatorio de la "Declaración Jurada para tramitar el Beneficio de Litigar sin Gastos" que se encuentra disponible para completar a continuación:</p>
+      <button class="popup-button"><a href="formulario.html" class="btn">Completar formulario</a></button>
+    </section>
  </section>
 <section class="section faq">
   <h2>Preguntas Frecuentes</h2>
@@ -148,5 +177,3 @@
 
 </body>
 </html>
-
-
