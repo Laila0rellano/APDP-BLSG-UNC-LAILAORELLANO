@@ -49,3 +49,18 @@ blsgForm.addEventListener('submit', function(e) {
       answer.classList.toggle('open');
     });
   });
+   function openModal() {
+    document.getElementById("modal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+
+  // Cerrar si se hace clic fuera del contenido
+  window.onclick = function(event) {
+    const modal = document.getElementById("modal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
